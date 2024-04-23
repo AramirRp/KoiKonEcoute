@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "f39ed8f154d24326868b3b4adfdb7f49";
-const redirectUri = "http://localhost:5173";
+const redirectUri = "https://koi-kon-ecoute.vercel.app";
 const scopes = ["user-library-read", "playlist-read-private", "user-library-modify"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
